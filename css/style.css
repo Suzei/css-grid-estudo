@@ -6,12 +6,15 @@ html, body {
 }
 
 
+
+
 .container {
     display: grid;
-    grid-template-columns: 3fr 1fr ;
-    grid-template-rows: 80vh 120vh 60vh ;
-    gap: 20px;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 80vh 20vh 120vh 60vh ;
+    gap: 10px;
     grid-template-areas: 'header header'
+                          'down sidedown'
                           'down side'
                           'footer footer';
    
@@ -22,20 +25,11 @@ html, body {
     
     background-color: crimson;
     grid-area: header;
+    border-radius: 9px;
 }
 
 
-.nav {
-  display: grid;
-  grid-template-columns: 0.4fr 0.4fr;
-  grid-template-rows: 350px 9vh;
-  gap: 30px;
-  width: 100%;
-  justify-content: center;
-  padding-top: 90px;
 
-  
-}
 
 
 
@@ -55,47 +49,65 @@ html, body {
     
 }
 
-.nav-components {
-  background-color: rgb(48, 99, 82);
+.style4 {
+  background-color: blue;
+  grid-area: sidedown;
+  border-radius: 5px;
   
-
 }
+
+
 
 footer {
     background-color: rgb(233, 227, 227);
     grid-area: footer;
 }
 
+.logo {
+  background: url(../img/basic.png) no-repeat;
+  background-size: 150px;
+  height: 150px;
+  margin-left: 20px;
+}
 
-::-webkit-scrollbar {
-    width: 10px;
-  }
+
+.footer-move {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
   
-  
-  ::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 5px grey; 
-    border-radius: 5px;
-  }
-   
- 
-  ::-webkit-scrollbar-thumb {
-    background: rgb(85, 8, 8); 
-    border-radius: 5px;
-  }
-  
- 
-  ::-webkit-scrollbar-thumb:hover {
-    background: rgb(56, 6, 6); 
+}
 
 
-  }
+.footer-content {
+  display: flex;
+  align-items: center;
+}
 
-  .img-1 {
-    background: url(../img/1.jpg) no-repeat;
-    background-size: 450px;
-    align-items: center;
-    height: 500px;
-    margin-top: 22px;
-    margin-left: 150px;
+.footer-topics {
+  display: flex;
+  flex-direction: column;
+  padding-left: 30px;
+}
 
-  }
+.footer-topics-2 {
+  display: flex;
+  flex-direction: column;
+
+}
+
+
+.footer-topics a {
+  width: 10px;
+  padding: 5px;
+  text-decoration: none;
+}
+
+.footer-topics-2 a {
+  width: 10px;
+  padding-left:80px;
+  text-decoration: none;
+}
+
+
