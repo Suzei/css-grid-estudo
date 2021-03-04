@@ -31,8 +31,6 @@ html, body {
 
 
 
-
-
 .style h1 {
     padding-top: 80px;
     margin-left: 10px;
@@ -68,6 +66,13 @@ footer {
   background-size: 150px;
   height: 150px;
   margin-left: 280px;
+  position: relative;
+  top: 120px;
+  left: 10px;
+}
+
+form h3 {
+  font-size: 30px;
 }
 
 
@@ -83,7 +88,7 @@ footer {
 .footer-content {
   display: flex;
   align-items: center;
-  margin-left: 250px;
+  margin-left: 260px;
 }
 
 .footer-topics {
@@ -117,7 +122,7 @@ footer {
 
 .line {
   background-color: black;
-  height: 200px;
+  height: 300px;
   width: 0.5px;
   margin-left: 80px;
   margin-bottom: 250px;
@@ -128,19 +133,31 @@ footer {
   display: flex;
   flex-direction: column;
   margin-left: 100px;
-  height: 300px
+  height: 300px;
+  margin-bottom: 220px
 }
+
+
+
+
 
 .user-name {
   height: 20px;
   border-radius: 20px;
   border: none;
   width: 180px;
+  position: relative;
+  top: 10px;
 }
 
 textarea {
   resize: none;
   border-radius: 10px;
-  height: 250px;
+  height: 250px !important;
   width: 850px;
+}
+
+textarea::placeholder {
+  padding-left: 10px;
+  padding-top: 2px
 }
