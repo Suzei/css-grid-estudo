@@ -1,3 +1,7 @@
+@media (min-width: 1024px) {
+
+
+
 html, body {
     margin: 0;
     padding: 0;
@@ -11,7 +15,7 @@ html, body {
 .container {
     display: grid;
     grid-template-columns: 3fr 1fr;
-    grid-template-rows: 80vh 20vh 120vh 80vh ;
+    grid-template-rows: 80vh 20vh 120vh 77vh ;
     gap: 10px;
     grid-template-areas: 'header header'
                           'down sidedown'
@@ -138,9 +142,6 @@ form h3 {
 }
 
 
-
-
-
 .user-name {
   height: 20px;
   border-radius: 20px;
@@ -161,3 +162,38 @@ textarea::placeholder {
   padding-left: 10px;
   padding-top: 2px
 }
+
+}
+
+.social-media {
+  float: right;
+  position: absolute;
+  margin-left: 60px;
+
+}
+
+
+
+
+
+.fa {
+  padding: 15px;
+  font-size: 20px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  
+}
+
+
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook, .fa-twitter, .fa-youtube {
+  background-color: black;
+  color: white;
+}
+
